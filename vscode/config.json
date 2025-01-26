@@ -1,0 +1,88 @@
+{
+  // Disable Workspace Trust
+  "security.workspace.trust.enabled": false,
+
+  // Fonts and Ligatures
+  "editor.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontLigatures": true,
+  "editor.fontLigatures": true,
+
+  // Theming
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredHighContrastLightColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredLightColorTheme": "Monokai Pro (Filter Spectrum)",
+  "window.autoDetectHighContrast": false,
+  "window.systemColorTheme": "dark",
+
+  // Smooth Animations
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  // Multi Cursor
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  // Live Server
+  "liveServer.settings.useLocalIp": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.port": 8080,
+
+  // Git
+  "git.confirmSync": false,
+
+  // Title bar
+  "window.commandCenter": false,
+
+  // Editor QoL
+  "editor.renderWhitespace": "boundary",
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+  "files.hotExit": "onExitAndWindowClose",
+  "update.showReleaseNotes": false,
+  "workbench.reduceMotion": "off",
+  "workbench.editor.highlightModifiedTabs": true,
+  "window.menuBarVisibility": "visible",
+  "window.dialogStyle": "custom",
+
+  // File QoL
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+
+  // To sort
+  "editor.tabSize": 2,
+  "editor.accessibilitySupport": "off",
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.renderCharacters": false,
+
+  // File associations
+  "files.associations": {
+    "*.reg": "ini",
+    "*.desktop": "ini"
+  },
+
+  // Extensions
+  "workbench.remoteIndicator.showExtensionRecommendations": false,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.tips.enabled": false,
+
+  // Terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "none",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.stickyScroll.enabled": true,
+
+  // Telemetery
+  "telemetry.telemetryLevel": "off"
+}
