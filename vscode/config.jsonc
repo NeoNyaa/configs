@@ -67,8 +67,8 @@
 
   // File associations
   "files.associations": {
-    "*.reg": "ini",
-    "*.desktop": "ini"
+    "*.desktop": "ini",
+    "*.mcmeta": "json"
   },
 
   // Extensions
