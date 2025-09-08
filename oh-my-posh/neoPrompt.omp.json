@@ -1,0 +1,101 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "async": true,
+  "blocks": [{
+      "alignment": "left",
+      "newline": true,
+      "segments": [{
+          "background": "#770077",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "",
+          "properties": {
+            "windows": " :"
+          },
+          "style": "diamond",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{ .Icon }} {{ .UserName }}@{{ .HostName }} ",
+          "type": "os"
+        },
+        {
+          "background": "#da28da",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "",
+          "style": "diamond",
+          "template": "  : {{ round .PhysicalPercentUsed .Precision }}% ({{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}GB/{{ (add (div .PhysicalTotalMemory 1073741824.0) 1) }}GB) ",
+          "trailing_diamond": "",
+          "type": "sysinfo"
+        },
+        {
+          "background": "#FF44FF",
+          "background_templates": [
+            "{{ if .Error }}#FF4444{{ end }}"
+          ],
+          "foreground": "#FFFFFF",
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "diamond",
+          "template": "  {{ if gt .Code 0 }}{{ else }}{{ end }} ",
+          "trailing_diamond": " ",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [{
+          "leading_diamond": "╭─ ",
+          "style": "diamond",
+          "template": " {{ .Name }} ⏽ ",
+          "type": "shell"
+        },
+        {
+          "properties": {
+            "style": "roundrock",
+            "threshold": 0
+          },
+          "style": "diamond",
+          "template": " {{ .FormattedMs }} ⏽ ",
+          "type": "executiontime"
+        },
+        {
+          "properties": {
+            "folder_icon": " ",
+            "folder_separator_icon": " ",
+            "home_icon": ""
+          },
+          "style": "diamond",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [{
+        "background": "transparent",
+        "foreground": "#FFFFFF",
+        "style": "diamond",
+        "template": "╰─ {{ if .Root }}#{{ else }}${{ end }}",
+        "type": "shell"
+      }],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{ .Shell }}: {{ .Folder }}",
+  "final_space": true,
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#FFFFFF",
+    "template": "{{if .Root }}#{{ else }}${{ end }} {{ .PWD }}  "
+  },
+  "upgrade": {
+    "auto": true,
+    "notice": false,
+    "source": "cdn"
+  },
+  "version": 3
+}
