@@ -1,15 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "async": true,
   "blocks": [{
       "alignment": "left",
       "newline": true,
       "segments": [{
           "background": "#770077",
           "foreground": "#FFFFFF",
-          "leading_diamond": "",
+          "leading_diamond": "\ue0b6", // 
           "properties": {
-            "windows": " "
+            "windows": " \ue62a" // 
           },
           "style": "diamond",
           "template": "{{ if .WSL }}WSL at {{ end }}{{ .Icon }} {{ .UserName }}@{{ .HostName }} ",
@@ -18,10 +17,10 @@
         {
           "background": "#da28da",
           "foreground": "#FFFFFF",
-          "leading_diamond": "",
+          "leading_diamond": "\ue0ba", // 
           "style": "diamond",
-          "template": "  {{ round .PhysicalPercentUsed .Precision }}% ",
-          "trailing_diamond": "",
+          "template": " \ue266 {{ round .PhysicalPercentUsed .Precision }}% ", // 
+          "trailing_diamond": "\ue0bc", // 
           "type": "sysinfo"
         },
         {
@@ -34,8 +33,8 @@
             "always_enabled": true
           },
           "style": "diamond",
-          "template": "  {{ if gt .Code 0 }}{{ else }}{{ end }} ",
-          "trailing_diamond": " ",
+          "template": " \ue23a {{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ", //   
+          "trailing_diamond": "\ue0b4 ", // 
           "type": "status"
         }
       ],
@@ -45,9 +44,9 @@
       "alignment": "left",
       "newline": true,
       "segments": [{
-          "leading_diamond": "╭─ ",
+          "leading_diamond": "\u256d\u2500 ", // ╭─
           "style": "diamond",
-          "template": " {{ .Name }} ⏽ ",
+          "template": "\uf489 {{ .Name }} \u23fd ", //  ⏽
           "type": "shell"
         },
         {
@@ -56,14 +55,14 @@
             "threshold": 0
           },
           "style": "diamond",
-          "template": " {{ .FormattedMs }} ⏽ ",
+          "template": "\ueba2 {{ .FormattedMs }} \u23fd ", //  \u23fd
           "type": "executiontime"
         },
         {
           "properties": {
-            "folder_icon": " ",
-            "folder_separator_icon": " ",
-            "home_icon": ""
+            "folder_icon": "\uf115 ", // 
+            "folder_separator_icon": "\uf061 ", // 
+            "home_icon": "\uf46d" // 
           },
           "style": "diamond",
           "template": "{{ .Path }} ",
@@ -79,7 +78,7 @@
         "background": "transparent",
         "foreground": "#FFFFFF",
         "style": "diamond",
-        "template": "╰─ {{ if .Root }}#{{ else }}${{ end }}",
+        "template": "\u2570\u2500 {{ if .Root }}#{{ else }}${{ end }}", // ╰─
         "type": "shell"
       }],
       "type": "prompt"
