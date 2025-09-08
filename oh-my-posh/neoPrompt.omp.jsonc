@@ -62,7 +62,7 @@
           "properties": {
             "folder_icon": "\uf115 ", // 
             "folder_separator_icon": "\uf061 ", // 
-            "home_icon": "\uf46d" // 
+            "home_icon": "\uf46d " // 
           },
           "style": "diamond",
           "template": "{{ .Path }} ",
