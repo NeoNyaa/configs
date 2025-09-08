@@ -89,7 +89,7 @@
   "transient_prompt": {
     "background": "transparent",
     "foreground": "#FFFFFF",
-    "template": "{{if .Root }}#{{ else }}${{ end }} {{ .PWD }}  "
+    "template": "{{if .Root }}#{{ else }}${{ end }} {{ .PWD }} \uf054 " // 
   },
   "upgrade": {
     "auto": true,
