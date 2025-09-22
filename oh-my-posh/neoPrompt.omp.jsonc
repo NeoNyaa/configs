@@ -46,7 +46,7 @@
       "segments": [{
           "leading_diamond": "\u256d\u2500 ", // ╭─
           "style": "diamond",
-          "template": "\uf489 {{ .Name }} \u23fd ", //  ⏽
+          "template": "\uf489 {{ .Name }}{{ if .Version}} (v{{ .Version }}){{end}} \u23fd ", //  ⏽
           "type": "shell"
         },
         {
