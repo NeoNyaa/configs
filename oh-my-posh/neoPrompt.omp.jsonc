@@ -8,7 +8,7 @@
           "foreground": "#FFFFFF",
           "leading_diamond": "\ue0b6", // 
           "properties": {
-            "windows": " \ue62a" // 
+            "windows": "\ue62a" // 
           },
           "style": "diamond",
           "template": " {{ .Icon }}{{ if .WSL }} WSL{{ end }} {{ .UserName }}@{{ .HostName }} ",
