@@ -11,7 +11,7 @@
             "windows": " \ue62a" // 
           },
           "style": "diamond",
-          "template": "{{ if .WSL }}WSL at {{ end }}{{ .Icon }} {{ .UserName }}@{{ .HostName }} ",
+          "template": " {{ .Icon }}{{ if .WSL }} WSL{{ end }} {{ .UserName }}@{{ .HostName }} ",
           "type": "os"
         },
         {
